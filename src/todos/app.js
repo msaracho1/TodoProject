@@ -5,7 +5,7 @@ import { renderTodos, renderPending } from './use-cases';
 const ElementIDs = {
     TodoList: '.todo-list',
     NewTodoInput: '#new-todo-input',
-    clearCompletedButton: '.clear-completed',
+    ClearCompletedButton: '.clear-completed',
     TodoFilters: '.filtro',
     PendingCountLabel: '#pending-count',
 }
@@ -13,7 +13,7 @@ const ElementIDs = {
 export const App = ( elementId) => {
 
     const displayTodos = () => {
-        const todos = todoStore.getTodo ( todoStore.getCurrentFilter() );
+        const todos = todoStore.getTodos( todoStore.getCurrentFilter() );
         renderTodos(ElementIDs.TodoList, todos);
         updatePendingCount();
      }
@@ -33,7 +33,7 @@ export const App = ( elementId) => {
     //Referencias HTML
     const newDescriptionInput = document.querySelector(ElementIDs.NewTodoInput);
     const todoListUl = document.querySelector(ElementIDs.TodoList);
-    const clearCompletedButton = document.querySelector(ElementIDs.clearCompletedButton);
+    const clearCompletedButton = document.querySelector(ElementIDs.ClearCompletedButton);
     const filtersLIs = document.querySelectorAll(ElementIDs.TodoFilters);
     // Listener del input
 newDescriptionInput.addEventListener('keyup', (event) => {
