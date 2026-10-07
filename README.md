@@ -1022,22 +1022,3 @@ src/
 ├── main.js
 └── style.css
 ```
-
----
-
-## Objetivo
-
-No aprender código de memoria.
-
-Quiero poder mirar un problema y pensar:
-
-```txt
-¿Qué dato tengo?
-¿Qué quiero obtener?
-¿Dónde está ese dato?
-¿Qué función debería encargarse?
-¿Qué devuelve?
-¿Qué elemento del DOM tengo que actualizar?
-```
-
-Ese razonamiento vale más que memorizar una solución.
