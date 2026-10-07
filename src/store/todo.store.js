@@ -27,7 +27,7 @@ const loadStore = () => {
 const saveStateToLocalStorage = () => {
     localStorage.setItem('state', JSON.stringify(state));
 }
-const getTodo = (filter = Filters.All) => {
+const getTodos = (filter = Filters.All) => {
 
     switch (filter) {
 
@@ -91,5 +91,5 @@ export default {
     deleteCompleted,
     setFilter,
     getCurrentFilter,
-    getTodo,
+    getTodos,
 }
